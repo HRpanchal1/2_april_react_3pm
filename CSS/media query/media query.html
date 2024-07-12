@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: solid 1px;
+        }
+
+        section
+        {
+            margin: 10px 0;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .wrap-re{
+            flex-wrap: wrap-reverse;
+        }
+        .ali {
+            align-items: center;
+        }
+        .jcs{
+            justify-content: space-between;
+        }
+        .col-50{
+            width: 100%;
+            padding: 100px ;
+            text-align: center;
+        }
+        .col-30{
+            width: 100%;
+            padding: 100px ;
+            text-align: center;
+        }
+        .col-25{
+            width: 100%;
+            padding: 100px ;
+            text-align: center;
+        }
+        .col-60{
+            width: 100%;
+            padding: 100px ;
+            text-align: center;
+        }
+        .col-80{
+            width: 100%;
+            padding: 100px ;
+            text-align: center;
+            background-color: red;
+        }
+        .col-20{
+            width: 100%;
+            padding: 100px ;
+            text-align: center;
+            background-color: yellow;
+        }
+        .col-40{
+            width: 100%;
+            padding: 100px ;
+            text-align: center;
+        }
+        .containar{
+            width:100%;
+            margin: 0 auto;
+        }
+
+        @media(min-width : 340px){
+            .containar{
+                width: 370px;
+            }
+        }
+        @media(min-width : 576px){
+            .containar{
+                width: 560px;
+            }
+            .col-25{
+                width: 50%;
+            }
+            .col-30{
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+        @media(min-width : 768px){
+            .containar{
+                width: 760px;
+            }
+            .col-25{
+                width: 50%;
+            }
+            .col-30{
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+        @media(min-width : 992px){
+            .containar{
+                width: 950px;
+            }
+            .col-60{
+                width: 60%;
+            }
+            .col-50{
+                width: 50%;
+            }
+            .col-80{
+                width: 80%;
+               
+            }
+            .col-20{
+                width: 20%;
+                padding: 90px;
+            }
+            .col-40{
+                width: 40%;
+            }
+            .col-30{
+                width: 30%;
+            }
+            .col-25{
+                width: 25%;
+            }
+        }
+
+        @media(min-width : 1200px){
+            .containar{
+                width: 1200px;
+            }
+            .col-60{
+                width: 60%;
+            }
+            .col-50{
+                width: 50%;
+            }
+            .col-80{
+                width: 80%;
+            }
+            .col-20{
+                width: 20%;
+            }
+            .col-40{
+                width: 40%;
+            }
+            .col-30{
+                width: 30%;
+            }
+            .col-25{
+                width: 25%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>navigation</h1>
+        </nav>
+    </header>
+    <section>
+        <div class="containar">
+            <div class="row">
+                <div class="col-50">col-50</div>
+                <div class="col-50">col-50</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="containar">
+            <div class="row jcs">
+                <div class="col-30">col-30</div>
+                <div class="col-30">col-30</div>
+                <div class="col-30">col-30</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="containar">
+            <div class="row">
+                <div class="col-25">col-25</div>
+                <div class="col-25">col-25</div>
+                <div class="col-25">col-25</div>
+                <div class="col-25">col-25</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="containar">
+            <div class="row">
+                <div class="col-60">col-60</div>
+                <div class="col-40">col-40</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="containar">
+            <div class="row">
+                <div class="col-80">col-80</div>
+                <div class="col-20">col-20</div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="containar">
+            <div class="row ">
+                <div class="col-20">col-20</div>
+                <div class="col-80">col-80</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

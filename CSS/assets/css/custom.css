@@ -1,0 +1,11 @@
+
+/* .css extension file never contains HTML tag/code or simple text data */
+/* <p>not correct way</p> */
+/* selector{property:value } */
+h5{
+    color: rgba(12, 46, 166, 0.578);
+}
+h2{
+    color: orangered;
+}
+h2{color: blueviolet;}

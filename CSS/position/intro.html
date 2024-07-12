@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            height: 1800px;
+            border: solid 5px black;
+            background-color: bisque;
+            display: flex;
+            /* justify-content: center; */
+
+        }
+
+        .box {
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(239, 157, 48);
+        }
+
+        .mini-box {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            /* position: absolute; */
+            right: 0;
+            bottom: 0;
+            top: 200px;
+        }
+
+        #box-3 {
+            /* top: 100px;
+            left: ;
+            right: ;
+             bottom: 0dvb; */
+            /* position: absolute; */
+            /* left: 0; */
+            /* right: 0; */
+            /* position: relative;  */
+            position: sticky;
+            /* top: 500px; */
+            top: 50px;
+       
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box" id="box-3">
+            <div class="mini-box"></div>
+        </div>
+        <div class="box">4</div>
+    </section>
+    <section></section>
+</body>
+
+</html>

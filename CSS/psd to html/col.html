@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1250px;
+            margin: 0 auto;
+            border: solid 2px;
+        }
+
+        .col-100 {
+            width: 100%;
+            border: solid 2px red;
+        }
+
+        .col-50 {
+            width: 50%;
+            border: solid 2px yellow;
+        }
+        .row{
+            display: flex;
+        }
+        .col-33{
+            width: 33.33%;
+            border: solid 2px green;
+        }
+        .col-25{
+            width: 25%;
+            border: solid 2px rgb(12, 61, 255);
+        }
+        .col-30{
+            width: 30%;
+            border: solid 2px rgb(13, 255, 239);
+        }
+        .jcs{
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section>
+        <div class="container">
+            <!-- <h1>data</h1> -->
+            <div class="col-100">
+                <h1>data</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <h1>data of col-50</h1>
+                </div>
+
+                <div class="col-50">
+                    <h1>data of col-50</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-33">
+                    <h1>data of col-33</h1>
+                </div>
+                <div class="col-33">
+                    <h1>data of col-33</h1>
+                </div>
+                <div class="col-33">
+                    <h1>data of col-33</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <h1>data col-25</h1>
+                </div>
+                <div class="col-25">
+                    <h1>data col-25</h1>
+                </div>
+                <div class="col-25">
+                    <h1>data col-25</h1>
+                </div>
+                <div class="col-25">
+                    <h1>data col-25</h1>
+                </div>
+            </div>
+
+            <div class="row jcs">
+                <div class="col-30">
+                    <h1>card</h1>
+                </div>
+                <div class="col-30">
+                    <h1>card</h1>
+                </div>
+                <div class="col-30">
+                    <h1>card</h1>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

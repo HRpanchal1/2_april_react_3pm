@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            height: 100vh;
+            background: linear-gradient(100deg, pink, blue, green);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 600px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        div {
+            font-size: 25px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        span {
+            font-size: 15px;
+            color: red;
+            display: block;
+        }
+
+        input {
+            width: 200px;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+
+        .login input {
+            margin: 0 0 0 80px;
+            width: 200px;
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <section>
+
+        <div class="box">
+            <form onsubmit="return validation()">
+                <div>
+                    <label for="username">username</label>
+                    <input type="text" id="username" placeholder="enter your name">
+                   
+                </div>
+                <div>
+                    <label for="password">password</label>
+                    <input type="password" id="password" placeholder="enter your password">
+                    <span id="passer"></span>
+                </div>
+                <div class="login">
+                    <input type="submit" value="Login">
+
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <p id="test"></p>
+    <button id="" onclick="click2()">click-me</button>
+
+    <script>
+
+        let test = document.getElementById("test")
+        function click2() {
+            test.innerText = "<h2>data</h2> "
+        }
+
+
+        let username = document.getElementById("username")
+        let password = document.getElementById("password")
+        let userer = document.getElementById("userer")
+        let passer = document.getElementById("passer")
+        let count = 1
+        console.log(username, password);
+
+        // let user = {
+        //     username : "devdatta",
+        //     age : 1
+        // }
+        // console.log(user.age);
+
+        function validation() {
+            // alert("validation")
+            if (username.value == "") {
+                // alert("enter a username")
+                // userer.innerHTML 
+                userer.innerHTML = "enter your name "
+                count = 0
+
+            }
+            else {
+                userer.innerHTML = ""
+                count = 1
+            }
+            console.log(username.value);
+
+            if (password.value == "") {
+                // alert("enter a password")
+                passer.innerHTML = "enter your password"
+                count = 0
+            }
+            else if (password.value.length < 8 || password.value.length > 16) {
+                // console.log("pass error");
+                passer.innerHTML = "max 8 min 16"
+                count = 0
+            }
+            else {
+                passer.innerHTML = ""
+                count = 1
+            }
+
+            if (count) {
+                return true
+            }
+            else {
+                return false
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

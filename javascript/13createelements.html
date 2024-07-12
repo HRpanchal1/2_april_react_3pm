@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <ul id="mylist">
+        <li>html</li>
+        <li>css</li>
+    </ul>
+
+    <button onclick="add()">add</button>
+
+
+    <script>
+
+        function add() {
+
+            console.log("add");
+            let data = document.createElement("li")
+            // let data2 = document.createElement("h1")
+            let nodetext = document.createTextNode("javascript")
+            console.log(nodetext);
+
+            data.appendChild(nodetext)
+
+            console.log(data);
+
+            document.getElementById("mylist").appendChild(data)
+        }
+
+
+    </script>
+
+</body>
+
+</html>

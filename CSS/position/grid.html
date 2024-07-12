@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            /* background-color: rgb(87, 120, 148); */
+            padding: 10px;
+        }
+
+        img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .grid-wr{
+            display: grid;
+            grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+            grid-auto-rows: 200px;
+            grid-auto-flow: dense;
+            gap: 10px;
+        }
+        .grid-wr .wide{
+            grid-column: span 2;
+        }
+        .grid-wr .tall{
+            grid-row: span 2;
+        }
+        .grid-wr .big{
+            /* order: 1; */
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-wr">
+        <div>
+            <img src="https://picsum.photos/id/237/500/600" alt="">
+        </div>
+        <div class="wide">
+            <img src="https://picsum.photos/id/247/500/600" alt="">
+        </div>
+        <div class="big">
+            <img src="https://picsum.photos/id/257/500/600" alt="">
+        </div>
+        <div class="tall">
+            <img src="https://picsum.photos/id/267/500/600" alt="">
+        </div>
+        <div class="big">
+            <img src="https://picsum.photos/id/277/500/600" alt="">
+        </div>
+        <div class="wide">
+            <img src="https://picsum.photos/id/287/500/600" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/297/500/600" alt="">
+        </div>
+        <div class="wide"> 
+            <img src="https://picsum.photos/id/107/500/600" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/117/500/600" alt="">
+        </div>
+        <div class="tall">
+            <img src="https://picsum.photos/id/127/500/600" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/147/500/600" alt="">
+        </div class="tall">
+        <div>
+            <img src="https://picsum.photos/id/157/500/600" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/167/500/600" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

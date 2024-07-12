@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            height: 900px;
+            background-color: rgb(200, 196, 164);
+            display: grid;
+            row-gap: 10px;
+            column-gap: 10px;
+            /* grid-template-rows: 200px 200px 200px;
+            grid-template-columns: 200px 200px 200px; */
+            grid-template-rows: 0.5fr 1fr 1fr  0.5fr;
+            grid-template-columns: 100px 100px 100px;
+            /* grid-template-rows: repeat(10 ,1fr);
+            grid-template-columns: repeat(10, 1fr); */
+        }
+
+        .box {
+            /* width: 150px;
+            height: 150px; */
+            font-size: 30px;
+            color: white;
+            background-color: gray;
+            text-align: center;
+            /* margin: 10px; */
+            /* display: inline-block; */
+        }
+        #box-1{
+          grid-column: 1 / 4;
+          
+        }
+        #box-2{
+             grid-column-start: 1;
+             grid-column-end: 3;
+
+         }
+         #box-7{
+            grid-column-start: 1;
+             grid-column-end: 4;
+         }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <P>grid layout = rows / cols </P> -->
+
+    <section>
+
+        <div class="box" id="box-1">header</div>
+        <div class="box" id="box-2">section</div>
+        <div class="box">3</div>
+        <div class="box" id="box-4">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box" id="box-7">7</div>
+        <!-- <div class="box">8</div> -->
+    </section>
+
+</body>
+
+</html>

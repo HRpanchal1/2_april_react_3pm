@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            background-color: darkkhaki;
+            height: 5000px;
+            position: relative;
+        }
+
+        .container {
+            width: 1200px;
+            /* border: solid 2px; */
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: rgb(223, 140, 140);
+            padding: 10px 0;
+            z-index: 999;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .links ul li {
+            margin: 15px;
+            display: inline-block;
+
+        }
+
+        .links a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin: 10px;
+
+        }
+
+        #main-box{
+            margin: 100px;
+            position: absolute;
+            top: 100px;
+            left: 400px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <h1>LOGO</h1>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">ABout</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Product</a></li>
+                        </ul>
+                    </div>
+                    <div class="icon">
+                        <h2>icon</h2>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="box-g">
+            <div class="box"></div>
+            <div class="box" id="main-box"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+
+
+</body>
+
+</html>

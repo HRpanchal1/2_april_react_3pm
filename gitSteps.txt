@@ -1,0 +1,19 @@
+
+Step 1) Create Git Account https://github.com/
+
+Step 2) Signin Account https://github.com/
+
+Step 3) Create Git repo in ur account (public)
+
+Step 4) Download gitbash (https://git-scm.com/downloads)
+
+Step 5) run gitbash setup and install it in ur sys (now u can access gitbash on mouse right click)
+
+Step 6) clone git repo in ur local machine using cmd : git clone https://github.com/dhwayit/WD_02_April_10AM.git
+
+Step 7) git add .
+
+Step 8) git commit -m "ur msg"
+
+Step 9) git push
+
